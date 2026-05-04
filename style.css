@@ -1,0 +1,68 @@
+:root{
+    /* Background Color */
+    --bgc-1: #2f2f2f;
+
+    /* Color */
+    --color-1: #dedede;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body, main{
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bgc-1);
+    color: var(--color-1);
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#infos{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap: 20vw;
+    font-size: large;
+    
+}
+
+#infos div{
+    height: 6vh;
+    width: 12vw;
+    border-bottom: 1px solid #fefefe ;
+}
+
+
+
+#board{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#board #grid{
+    height: 90%;
+    width: 90%;
+    border: 2px solid #dedede;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 40px);
+    grid-template-rows: repeat(auto-fill, 40px);
+}
+
+.block{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #dedede;
+}
