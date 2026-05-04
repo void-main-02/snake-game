@@ -31,15 +31,23 @@ main{
     justify-content: center;
     align-items: center;
     padding: 2em;
-    gap: 20vw;
-    font-size: large;
+    gap: 15vw;
+    font-size: 1.32em;
+    font-weight: 600;
     
 }
 
 #infos div{
+
     height: 6vh;
-    width: 12vw;
-    border-bottom: 1px solid #fefefe ;
+    width: 16vw;
+    /* border: 1px solid #fefefe ; */
+    text-align: center;
+    border-radius: 10px;
+    background-color: #5b5b5be1 ;
+    color: #fffffff5;
+    padding-top: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 2px 8px 24px;
 }
 
 
@@ -52,17 +60,19 @@ main{
     justify-content: center;
 }
 
-#board #grid{
+#grid{
     height: 90%;
-    width: 90%;
-    border: 2px solid #dedede;
+    width: 85%;
+    border: 2px solid #9c9c9c;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 40px);
-    grid-template-rows: repeat(auto-fill, 40px);
+    grid-template-columns: repeat(auto-fill, minmax(40px , 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(40px , 1fr));
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-.block{
+.boxes{
     height: 40px;
     width: 40px;
-    border: 1px solid #dedede;
+    border: 0.5px solid #4d4d4d;
 }
