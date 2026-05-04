@@ -23,10 +23,4 @@ A classic Snake Game built using basic web technologies. Control the snake, eat 
 
 ---
 
-## 📂Project Structure 
 
-snake-game/
-│── index.html
-│── style.css
-│── script.js
-│── README.md
